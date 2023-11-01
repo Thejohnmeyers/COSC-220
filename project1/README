@@ -1,0 +1,21 @@
+README:
+This program starts off by asking the user for input of one of the following choices 
+create student, delete student, update records, print student list, create a book, remove a book,print the list of books, and then finally to exit the program. In order for any of these things to happen the user has to input a number of 1-8 and depending on which of these numbers is inputted will determine what action follows it.
+the list goes as follows:
+1. create a student
+2. update records
+3. delete a student
+4. print student list
+5. create a book
+6. remove a book
+7. print books
+8. exit program
+if anything other than these 8 numbers is inputted the program will stop because invalid input was entered. before any of this is printed out a check to see if the user actually wants to enter the program is prompted and the user is asked to entere Y/N for yes or no whether or not they want to enter the program.
+Going back to the list to start with number 1 create student it creates the start of a doubly linked list in order to hold student attributes and alongside with this each student has their own booklist meaning different students have different book lists.
+in order to update the records the program prompts the user to enter new information for the student and then sets that students infor to the new information
+next is delete student and to delete a student the program prompts the user for an Id number in order to find the right student to delete and then it removes that student
+print student list is pretty basic it goes along the doubly linked list and prints out all of its values
+creating a book is fairly the same as creating a student except all of the book objects are put into a singly linked list instead of a doubly linked list and each student has their own book list so every book object is specific towards each student
+removing a book searches based on the title of the book and once it finds a match it deletes that book otherwise it doesnt do anything if a wrong input is put in or anything otherwise
+printing books is also a simple funtion it asks the user for the id number of the student that the book they are ttrying to delete is in and then it prompts the user again for the title and after that deletes the book
+finally exiting the program calls the destructers and cleans the program
